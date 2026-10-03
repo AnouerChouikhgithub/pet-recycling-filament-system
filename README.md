@@ -53,16 +53,14 @@ pet-recycling-filament-system/
 │       ├── Structure-A.step
 │       └── Structure-B.step
 ├── docs/
-│   ├── Schematic Diagram.pdf         # Full breadboard / wiring schematic
-│   └── Schematic Diagram_bb.pdf      # Breadboard wiring diagram (Fritzing export)
+│   ├── Schematic Diagram_bb.pdf      # Full breadboard / wiring schematic (Fritzing export)
 └── README.md
 ```
 
 > **Known stale paths in earlier READMEs:** the firmware is
 > `firmware/arduino-version/arduino-version.ino` (NOT `firmware/code.ino`),
 > the base assembly is `cad/PET-Recycling-Filament-System-Base - V3.2/`
-> (NOT `cad/base-assembly/`), and the schematic is `docs/Schematic Diagram.pdf`
-> (NOT `docs/Schematic-Diagram_bb.pdf`). Keep this tree in mind when editing
+> (NOT `cad/base-assembly/`). Keep this tree in mind when editing
 > this document.
 
 ## Mechanical overview
@@ -76,7 +74,7 @@ provided as `.step` files in `cad/3D Printing/`.
 |---|---|
 | `cad/PET-Recycling-Filament-System-Base - V3.2/` | Main structural assembly (V3.2), SolidWorks + STEP |
 | `cad/3D Printing/*.step` | Individual 3D-printed parts: gears, separators, fixatives, pulleys, frame sections |
-| `docs/Schematic Diagram.pdf` | Full wiring schematic |
+| `docs/Schematic Diagram_bb.pdf` | Full breadboard / wiring schematic |
 | `firmware/arduino-version/arduino-version.ino` | Firmware source (single file) |
 
 STEP files open in any CAD software (SolidWorks, Fusion 360, FreeCAD).
@@ -112,7 +110,7 @@ Extracted verbatim from the sketch constants; nothing is inferred.
 | A7 | `thermistorPin` | INPUT | Thermistor voltage divider ADC | `readingTemperature()` |
 
 > `TODO(anouer): verify against the updated schematic` — the pin map above was
-> read from the `.ino` only; the breadboard schematic (`docs/Schematic Diagram.pdf`)
+> read from the `.ino` only; the breadboard schematic (`docs/Schematic Diagram_bb.pdf`)
 > has not been re-checked against the latest wired build.
 
 ## Firmware overview
